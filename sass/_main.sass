@@ -410,13 +410,11 @@ header
     line-height: 1em
     text-transform: uppercase
   h2
-    color: #d2b978
-    font-size: 36px
-    font-family: 'pf_highway_sans_prothin'
-    line-height: 1.4em
+    line-height: 1.2em
     span
-      font-family: 'pf_highway_sans_proextra_thin'
-      font-size: 72px
+      font-size: 60px
+      font-family: 'conv_pfdintextcondpro-thin'
+      text-transform: uppercase
 
   .our_in
     @extend %in
@@ -439,7 +437,7 @@ header
     left: 50%
     +transform(translate(-50%, -50%))
     margin-top: 60px
-    margin-left: 0px
+    margin-left: 35px
     &:before
       position: absolute
       content: ""
@@ -450,7 +448,7 @@ header
     width: 600px
     margin: 55px auto 0
     position: relative
-    margin-left: 215px
+    margin-left: 340px
   &__price
     width: 180px
     display: inline-block
@@ -481,7 +479,7 @@ header
       +s(bubble_ico)
   &__girl
     position: absolute
-    bottom: -97px
+    bottom: -86px
     left: -50px
     img
       display: block
@@ -489,62 +487,64 @@ header
 
 .reviews
   +clr
-  margin-top: 30px
-  padding-bottom: 140px
+  padding-top: 70px
+  padding-bottom: 40px
   h2
-    margin-bottom: 35px
-    text-align: center
-    color: black
-
-
+    margin-bottom: 30px
   .reviews_in
     @extend %in
     +clr
   .review__item
     +background-clip(padding-box)
-    width: 300px
+    width: 280px
     position: relative
     display: inline-block
-    margin-right: 42px
-    +border-radius(2px)
-    +background-clip(padding-box)
-    padding: 18px
-    border: solid 2px #e5e5e5
+    margin-right: 50px
+    text-align: center
     +box
     +clr
     &:last-child
       margin-right: 0
-    &:after
-      position: absolute
-      content: ""
-      bottom: -34px
-      left: 20px
-      +s(review_popup)
+    .review__img
+      display: inline-block
+      width: 120px
+      height: 120px
+      +border-radius(50%)
+      border: solid 2px #fadc28
+
+      text-align: center
+      .vertical-centered
+        vertical-align: middle
+        height: 100%
+        display: inline-block
+      img
+        display: inline-block
+        vertical-align: middle
 
     h3
-      color: #aa2828
+      color: #fadc28
       font-size: 24px
-      font-family: 'pf_highway_sans_prothin'
-      text-transform: none
+      font-family: 'conv_pfdintextcondpro-thin'
+      text-transform: uppercase
       margin-bottom: 10px
+      margin-top: 15px
       font-weight: normal
     p
       +pfl
-      color: #1e1e1e
+      color: #ffffff
       font-size: 16px
+      padding: 0 15px
 
 
 
 
 .order
-  margin-top: 65px
   padding-bottom: 40px
   .order_in
     @extend %in
   h2
     margin-bottom: 40px
     text-align: center
-    color: #000000
   &__item
     background: url("../img/order-item_bg.jpg") no-repeat
     vertical-align: top
@@ -560,7 +560,7 @@ header
       margin-right: 0
   &__caption
     font-size: 24px
-    font-family: 'pf_highway_sans_prothin'
+    font-family: 'conv_pfdintextcondpro-thin'
     margin-bottom: 5px
     color: #000
     text-transform: uppercase
@@ -577,7 +577,7 @@ header
 
 
     h3
-      font-family: 'code_proregular'
+      font-family: 'conv_pfdintextcondpro-regular'
       font-size: 24px
       font-weight: normal
       color: #aa2828
@@ -599,8 +599,8 @@ header
     .button
       font-size: 24px
       float: none
-      padding: 11px 56px
-      +box-shadow(inset 0 -2px 0 rgba(106, 18, 18, 0.90))
+      padding: 11px 54px
+      +box-shadow(inset 0 -2px 0 #c7b345)
       &:hover
         +box-shadow(0 0 0 0)
 
