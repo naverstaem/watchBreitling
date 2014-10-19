@@ -35,7 +35,7 @@ input::-moz-placeholder, textarea::-moz-placeholder { font-size: 16px; color: #a
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { font-size: 16px; color: #a0a0a0; font-family: "Conv_PFDinTextCondPro-Light"; font-weight: normal; font-style: normal; }
 input::placeholder, textarea::placeholder { font-size: 16px; color: #a0a0a0; font-family: "Conv_PFDinTextCondPro-Light"; font-weight: normal; font-style: normal; }
 
-.top .top_in, .scrollMenu .top_in, header .header_in, .bottom .header_in, .specs .specs_in, .specs__price .wrapper, .photos .photos_in, .our .our_in, .reviews .reviews_in, .order .order_in, footer { max-width: 1200px; width: 1000px; margin-left: auto; margin-right: auto; }
+.top .top_in, .scrollMenu .top_in, header .header_in, .bottom .header_in, .specs .specs_in, .specs__price .wrapper, .photos .photos_in, .history .history_in, .our .our_in, .reviews .reviews_in, .order .order_in, footer { max-width: 1200px; width: 1000px; margin-left: auto; margin-right: auto; }
 
 .myFancyClose { position: absolute; top: -17px; right: -18px; }
 
@@ -201,6 +201,15 @@ header .header_in .header__form h3, .bottom .header_in .header__form h3 { font-f
 .slick-next { right: 0; left: auto; }
 .slick-next:hover { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA='); background-size: 100%; background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, #000000)); background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), #000000); background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), #000000); background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #000000); }
 .slick-next:before { position: absolute; content: ""; top: 38%; right: 6px; left: auto; }
+
+.history { *zoom: 1; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.history:after { content: " "; display: table; clear: both; }
+.history h2 { line-height: 1.4em; }
+.history .history_in { *zoom: 1; position: relative; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.history .history_in:after { content: " "; display: table; clear: both; }
+.history .history__img { background: url(../img/history_watch.png) center center no-repeat; width: 830px; height: 420px; float: left; margin-left: -110px; }
+.history .history__img img { display: block; }
+.history .history__text { float: right; width: 470px; text-align: left; line-height: 1.8em; margin-top: -340px; padding-right: 60px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; font-family: "Conv_PFDinTextCondPro-Light"; font-weight: normal; font-style: normal; font-size: 18px; }
 
 .our { background: url(../img/our_bg.jpg) center no-repeat; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; height: 800px; padding-top: 65px; position: relative; *zoom: 1; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .our:after { content: " "; display: table; clear: both; }
