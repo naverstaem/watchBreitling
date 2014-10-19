@@ -3,13 +3,13 @@ head.ready(function() {
 	// $(document).on("click", function(){
 	// 	$(".js-popup").hide();
 	// });
-//   $(window).scroll(function () {
-//       if ( $(this).scrollTop() > 200) {
-//           $('.scrollMenu').slideDown();
-//       } else if ( $(this).scrollTop() <= 200 ) {
-//           $('.scrollMenu').slideUp();
-//       }
-//   });
+   $(window).scroll(function () {
+       if ( $(this).scrollTop() > 200) {
+           $('.scrollMenu').slideDown();
+       } else if ( $(this).scrollTop() <= 200 ) {
+           $('.scrollMenu').slideUp();
+       }
+   });
 
 //    jQuery(document).ready(function($) {
 //        var nav = $('.menu');
@@ -36,6 +36,7 @@ head.ready(function() {
     $('#form3').validate();
     $('#form4').validate();
     $('#form5').validate();
+    $('#form6').validate();
 
     $('.fancybox').fancybox({
         helpers:{

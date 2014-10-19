@@ -57,12 +57,12 @@
     font-size: 16px
     margin-top: -6px
     display: inline-block
-    +pfl
+    font-family: 'conv_pfdintextcondpro-lightital'
 
   .callme
     display: inline-block
     color: #fadc28
-    +pfl
+    font-family: 'conv_pfdintextcondpro-lightital'
     font-size: 16px
     margin-top: -6px
     &:hover
@@ -493,6 +493,7 @@ header
     margin-bottom: 30px
   .reviews_in
     @extend %in
+    width: 960px
     +clr
   .review__item
     +background-clip(padding-box)
@@ -533,8 +534,7 @@ header
       +pfl
       color: #ffffff
       font-size: 16px
-      padding: 0 15px
-
+      padding: 0 5px
 
 
 
@@ -605,32 +605,30 @@ header
         +box-shadow(0 0 0 0)
 
 
-
-
-
 .bottom
-  height: 630px
   @extend header
   padding-top: 0
+  height: 940px
   .header_in--bottom
     margin-top: 0px
-    .header__left
-      margin-top: 40px
     .watch
-      margin-top: -80px
+      margin-top: 0px
 
 
 footer
+  +clr
   box-sizing: border-box
   height: 90px
-  @extend %in
+  background: #777
+  .footer_in
+    @extend %in
   text-align: center
-  padding-top: 16px
+  padding-top: 10px
   p
     font-size: 16px
-    color: #787878
+    color: #3c3c3c
     a
-      color: #c8965a
+      color: #ffffff
       &:hover
         text-decoration: none
 
