@@ -191,10 +191,12 @@ header
   .specs_in
     @extend %in
     +clr
+
   .specs__items
     float: left
     width: 280px
     margin-top: 140px
+    +clr
   .specs__item
     display: block
     margin-bottom: 30px
@@ -248,25 +250,59 @@ header
   .specs__items--right
     float: right
     text-align: right
+    +clr
     hr
       +background-image(linear-gradient(to right, #000 0%, #595959 100%))
+  &__price
+    background: #1d1d1d
+    clear: both
+    padding-top: 30px
+    margin-top: 60px
+    +clr
+    text-align: center
+    .wrapper
+      @extend %in
+      width: 500px
+    h5
+      color: #fadc28
+      text-transform: uppercase
+      font-family: 'conv_pfdintextcondpro-thin'
+      font-size: 24px
+      font-weight: normal
+      span
+        font-family: 'als_rublregular'
+        font-size: 14px
+        text-transform: none
+    hr
+      width: 500px
+      height: 2px
+      @include opacity(.4)
+      @include background-image(linear-gradient(to left, #1d1d1d 0%, #777 50%, #1d1d1d 100%))
+      border: none
+      margin: 15px 0
+    input
+      margin-top: 0
+
+
+
+
 
 
 .photos
   background: #000000
-  padding: 40px 0
+  padding: 70px 0
   +box
   +clr
   h2
     color: #ffffff
-    margin-bottom: 20px
+    margin-bottom: 15px
   .photos_in
     @extend %in
-    width: 960px
+    width: 990px
   .photo__item
     position: relative
     display: inline-block
-    width: 300px
+    width: 320px
     height: 180px
     vertical-align: top
     margin-right: 25px
@@ -300,8 +336,8 @@ header
   content: ''
   top: 14px
   left: 0
-  width: 330px
-  height: 200px
+  width: 320px
+  height: 180px
   +transition(background, .5s)
   &:hover
     +background-image(linear-gradient(to right, rgba(#000,1), rgba(#000,0)))
@@ -320,7 +356,7 @@ header
     position: absolute
     content: ""
     top: 38%
-    right: 5px
+    right: 6px
     left: auto
     //+s(next)
 
