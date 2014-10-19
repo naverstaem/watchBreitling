@@ -182,120 +182,76 @@ header
 
 
 
-
 .specs
-  background: #000
-  padding-top: 70px
-  padding-bottom: 10px
-  +clr
+  padding-top: 60px
   +box
+  +clr
   h2
-    margin-bottom: 50px
+    margin-bottom: 20px
   .specs_in
     @extend %in
-    width: 925px
     +clr
-    h2
-      margin-left: 40px
-  &__items
-    float: left
-    width: 295px
-    font-size: 16px
-    padding-bottom: 18px
-    +box
-    &.short
-      margin-left: 124px
-      width: 225px
-      .specs__item
-
-        &.title
-          margin-bottom: 28px
-        .specs__price
-          font-size: 48px
-          color: #aa2828
-          font-family: 'code_pro_lightregular'
-          margin-top: 90px
-          span
-            font-size: 24px
-            font-family: 'als_rublregular'
-            color: #aa2828
-
-
-
-
-  &__item
-    color: #787878
-    margin-top: 28px
-    font-family: 'conv_pfdintextcondpro-light'
-    font-size: 16px
-    &:first-child
-      margin-top: 0
-    &.title
-      color: #8c0a0a
-      font-size: 18px
-
-
-
-    span
-      color: #ffffff
-      font-size: 18px
-      text-transform: uppercase
-
-  &__watch
-    margin-top: 0px
-    position: relative
+  .specs__items
     float: left
     width: 280px
-    margin-right: 0px
-
+    margin-top: 140px
+  .specs__item
+    display: block
+    margin-bottom: 30px
+    h3
+      font-size: 24px
+      +pfl
+      color: #fadc28
+      text-transform: uppercase
+    hr
+      height: 2px
+      +background-image(linear-gradient(to left, #000 0%, #595959 100%))
+      border: none
+      margin: 2px 0 5px
+    h4
+      +pfl
+      font-size: 18px
+  .specs__watch
+    position: relative
+    float: left
+    margin-left: 18px
     img
-      width: 280px
-      height: 530px
-      position: relative
-      display: block
+      width: 420px
+      height: 690px
+    .specs__text-degree
+      position: absolute
+      bottom: -24px
+      font-family: 'conv_pfdintextcondpro-thin'
+      font-size: 24px
+      left: 35%
+      text-transform: uppercase
+      &:before
+        position: absolute
+        content: ""
+        top: -140px
+        left: -85px
+        +s(360)
     .prev
       position: absolute
+      left: -25px
+      top: 44%
       content: ""
       +s(prev)
-      top: 39%
-      left: -60px
       cursor: pointer
-
     .next
       position: absolute
+      right: -25px
+      top: 44%
       content: ""
       +s(next)
-      top: 39%
-      right: -60px
       cursor: pointer
+  .specs__items--right
+    float: right
+    text-align: right
+    hr
+      +background-image(linear-gradient(to right, #000 0%, #595959 100%))
 
-    .threesixty
-      position: absolute
-      text-align: center
-      padding-top: 47px
-      +box
-      top: 0px
-      right: -80px
-      +s(360)
-      font-size: 36px
-      color: #d2b978
-      content: ""
-      font-family: 'bebas_neue_regularregular'
-  hr
-    width: 520px
-    height: 2px
-    +background-image(linear-gradient(to left, #000 0%, #3b3b3b 45%, #d1b977 80%, #1d1d1d 100%))
-    float: right
-    border: none
-  &__text
-    float: right
-    text-align: left
-    color: #d2b978
-    font-size: 16px
-    +pfl
-    width: 480px
-    padding-right: 40px
-    line-height: 1.7em
+
 .photos
   background: #000000
   padding: 40px 0
