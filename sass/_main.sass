@@ -1,0 +1,634 @@
+// Normally mainpage styles 
+//+font('Conv_SegoePrintRegular', 'SegoePrintRegular')
+
+.top
+  background: #1d1d1d
+
+  +background-size(cover)
+  height: 80px
+  .top_in
+    @extend %in
+    +clr
+    position: relative
+    padding-top: 30px
+
+  nav
+    float: left
+
+    ul
+      font-size: 14px
+      padding: 0
+      li
+        display: inline-block
+        float: left
+        margin-right: 16px
+        font-family: 'conv_pfdintextcondpro-light'
+        border-right: solid 1px
+        color: #ffffff
+        line-height: 1em
+        padding-right: 20px
+        &:last-child
+          border: none
+        a
+          text-decoration: none
+          color: inherit
+          border-bottom: solid 1px
+          &:hover
+            border-bottom: solid 3px
+          &.is-active
+            border-bottom: solid 3px
+
+
+  .top__right
+    float: right
+    text-align: right
+  .top__phone
+    +clr
+    font-size: 36px
+    color: #fff
+    margin: -17px 0 0 0
+    font-family: 'conv_pfdintextcondpro-xthinital'
+    line-height: 1em
+    font-weight: normal
+    span
+      font-family: 'conv_pfdintextcondpro-lightital'
+  .nomenclature
+    color: white
+    font-size: 16px
+    margin-top: -6px
+    display: inline-block
+    font-family: 'conv_pfdintextcondpro-lightital'
+
+  .callme
+    display: inline-block
+    color: #fadc28
+    font-family: 'conv_pfdintextcondpro-lightital'
+    font-size: 16px
+    margin-top: -6px
+    &:hover
+      text-decoration: none
+
+
+
+header
+  background: #000
+  +background-size(cover)
+  height: 1000px
+  position: relative
+  +box
+
+
+  .header_in
+    @extend %in
+    +clr
+    position: relative
+    margin-top: 0
+    width: 800px
+    text-align: center
+
+    .header__logo
+      margin-top: 32px
+
+    .hr--large
+      +background-image(linear-gradient(to left, #000 0%, #777 50%, #000 100%))
+      width: 800px
+      height: 2px
+      border: none
+      margin-top: 35px
+      margin-bottom: 20px
+    .hr--small
+      @extend .hr--large
+      width: 500px
+      @include opacity(.4)
+      margin-top: 15px
+
+    h1
+      font-family: 'copperplate_gothic_lightRg'
+      font-size: 72px
+      line-height: normal
+    h2
+      font-family: 'conv_pfdintextcondpro-thin'
+      font-size: 36px
+      font-weight: normal
+      text-transform: uppercase
+
+    .watch
+      position: relative
+      background: url(../img/header_watch.jpg) no-repeat
+      width: 860px
+      height: 550px
+      margin-top: 2px
+      float: none
+      +clr
+
+
+
+    .price
+      position: absolute
+      color: #ffffff
+      font-weight: normal
+      font-family: 'conv_pfdintextcondpro-thin'
+      font-size: 60px
+      line-height: 1em
+      padding-top: 70px
+      width: 200px
+      height: 200px
+      +border-radius(50%)
+      +box
+      border: solid 2px white
+      top: 323px
+      right: -50px
+      z-index: 1
+      span
+        font-family: 'als_rublregular'
+        font-size: 24px
+
+
+
+    .header__form
+      position: relative
+      z-index: 1
+      margin-top: -140px
+      left: 20px
+      +box
+      h3
+        font-family: 'conv_pfdintextcondpro-thin'
+        font-size: 24px
+        color: #fadc28
+        font-weight: normal
+        text-transform: uppercase
+
+
+
+.scrollMenu
+  //@extend header
+  @extend .top
+  .top_in
+    padding-top: 20px
+  position: fixed
+  z-index: 999
+  width: 100%
+  top: 0
+  left: 0
+  bottom: auto
+  display: none
+  height: 60px
+  +box
+  background: rgba(#000, 0.8)
+  .top
+    height: 0
+
+
+
+
+
+.specs
+  padding-top: 60px
+  +box
+  +clr
+  h2
+    margin-bottom: 20px
+  .specs_in
+    @extend %in
+    +clr
+
+  .specs__items
+    float: left
+    width: 280px
+    margin-top: 140px
+    +clr
+  .specs__item
+    display: block
+    margin-bottom: 30px
+    h3
+      font-size: 24px
+      +pfl
+      color: #fadc28
+      text-transform: uppercase
+    hr
+      height: 2px
+      +background-image(linear-gradient(to left, #000 0%, #595959 100%))
+      border: none
+      margin: 2px 0 5px
+    h4
+      +pfl
+      font-size: 18px
+  .specs__watch
+    position: relative
+    float: left
+    margin-left: 18px
+    img
+      width: 420px
+      height: 690px
+    .specs__text-degree
+      position: absolute
+      bottom: -24px
+      font-family: 'conv_pfdintextcondpro-thin'
+      font-size: 24px
+      left: 35%
+      text-transform: uppercase
+      &:before
+        position: absolute
+        content: ""
+        top: -140px
+        left: -85px
+        +s(360)
+    .prev
+      position: absolute
+      left: -25px
+      top: 44%
+      content: ""
+      +s(prev)
+      cursor: pointer
+    .next
+      position: absolute
+      right: -25px
+      top: 44%
+      content: ""
+      +s(next)
+      cursor: pointer
+  .specs__items--right
+    float: right
+    text-align: right
+    +clr
+    hr
+      +background-image(linear-gradient(to right, #000 0%, #595959 100%))
+  &__price
+    background: #1d1d1d
+    clear: both
+    padding-top: 30px
+    margin-top: 60px
+    +clr
+    text-align: center
+    .wrapper
+      @extend %in
+      width: 500px
+    h5
+      color: #fadc28
+      text-transform: uppercase
+      font-family: 'conv_pfdintextcondpro-thin'
+      font-size: 24px
+      font-weight: normal
+      span
+        font-family: 'als_rublregular'
+        font-size: 14px
+        text-transform: none
+    hr
+      width: 500px
+      height: 2px
+      @include opacity(.4)
+      @include background-image(linear-gradient(to left, #1d1d1d 0%, #777 50%, #1d1d1d 100%))
+      border: none
+      margin: 15px 0
+    input
+      margin-top: 0
+
+
+
+
+
+
+.photos
+  background: #000000
+  padding: 70px 0
+  +box
+  +clr
+  h2
+    color: #ffffff
+    margin-bottom: 15px
+  .photos_in
+    @extend %in
+    width: 990px
+  .photo__item
+    position: relative
+    display: inline-block
+    width: 320px
+    height: 180px
+    vertical-align: top
+    margin-right: 25px
+    &:last-child
+      margin-right: 0
+    span
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background: rgba(#000, .7)
+      +opacity(0)
+      z-index: 1
+      +transition(background, .5s)
+      &:after
+        position: absolute
+        content: ""
+        +s(zoom)
+        top: 50%
+        left: 50%
+        +transform(translate(-50%, -50%))
+
+      &:hover
+        +opacity(1)
+    img
+      display: block
+
+.slick-prev, .slick-next
+  position: absolute
+  content: ''
+  top: 14px
+  left: 0
+  width: 320px
+  height: 180px
+  +transition(background, .5s)
+  &:hover
+    +background-image(linear-gradient(to right, rgba(#000,1), rgba(#000,0)))
+  &:before
+    position: absolute
+    content: ""
+    top: 38%
+    left: 0
+    //+s(prev)
+.slick-next
+  right: 0
+  left: auto
+  &:hover
+    +background-image(linear-gradient(to right, rgba(#000,0), rgba(#000, 1)))
+  &:before
+    position: absolute
+    content: ""
+    top: 38%
+    right: 6px
+    left: auto
+    //+s(next)
+
+.history
+  +clr
+  +box
+  h2
+    line-height: normal
+  .history_in
+    +clr
+    @extend %in
+    position: relative
+    +cover
+  .history__img
+    background: url(../img/history_watch.png) center center no-repeat
+    width: 830px
+    height: 420px
+    float: left
+    margin-left: -110px
+    img
+      display: block
+    
+  .history__text
+    float: right
+    width: 470px
+    text-align: left
+    line-height: 1.8em
+    margin-top: -340px
+    padding-right: 60px
+    +box
+    +pfl
+    font-size: 18px
+
+
+
+
+.our
+  background: url(../img/our_bg.jpg) center no-repeat
+  +background-size(cover)
+  height: 800px
+  padding-top: 65px
+  position: relative
+  +clr
+  +box
+  h3
+    font-weight: normal
+    color: #ffffff
+    font-size: 36px
+    font-family: 'georgiaitalic'
+    text-align: center
+    line-height: 1em
+    text-transform: uppercase
+  h2
+    line-height: 1.2em
+    span
+      font-size: 60px
+      font-family: 'conv_pfdintextcondpro-thin'
+      text-transform: uppercase
+
+  .our_in
+    @extend %in
+    position: relative
+    +clr
+
+  .russia
+    position: relative
+    background: url(../img/russia.png) center center no-repeat
+    width: 860px
+    height: 515px
+    margin: -60px auto 0
+  &__delivery
+    width: 170px
+    color: #ffffff
+    font-family: 'conv_pfdintextcondpro-regular'
+    font-size: 18px
+    position: absolute
+    top: 50%
+    left: 50%
+    +transform(translate(-50%, -50%))
+    margin-top: 60px
+    margin-left: 35px
+    &:before
+      position: absolute
+      content: ""
+      +s(pin_ico)
+      top: -73px
+      left: -132px
+  &__bottom
+    width: 600px
+    margin: 55px auto 0
+    position: relative
+    margin-left: 340px
+  &__price
+    width: 180px
+    display: inline-block
+    position: relative
+    margin-right: 170px
+    margin-left: 50px
+    color: #ffffff
+    font-size: 18px
+    font-family: 'conv_pfdintextcondpro-regular'
+    &:before
+      position: absolute
+      top: -8px
+      left: -75px
+      content: ""
+      +s(price_ico)
+  &__support
+    width: 190px
+    display: inline-block
+    position: relative
+    font-size: 18px
+    color: #ffffff
+    font-family: 'conv_pfdintextcondpro-regular'
+    &:before
+      position: absolute
+      top: -5px
+      left: -75px
+      content: ""
+      +s(bubble_ico)
+  &__girl
+    position: absolute
+    bottom: -86px
+    left: -50px
+    img
+      display: block
+
+
+.reviews
+  +clr
+  padding-top: 70px
+  padding-bottom: 40px
+  h2
+    margin-bottom: 30px
+  .reviews_in
+    @extend %in
+    width: 960px
+    +clr
+  .review__item
+    +background-clip(padding-box)
+    width: 280px
+    position: relative
+    display: inline-block
+    margin-right: 50px
+    text-align: center
+    +box
+    +clr
+    &:last-child
+      margin-right: 0
+    .review__img
+      display: inline-block
+      width: 120px
+      height: 120px
+      +border-radius(50%)
+      border: solid 2px #fadc28
+
+      text-align: center
+      .vertical-centered
+        vertical-align: middle
+        height: 100%
+        display: inline-block
+      img
+        display: inline-block
+        vertical-align: middle
+
+    h3
+      color: #fadc28
+      font-size: 24px
+      font-family: 'conv_pfdintextcondpro-thin'
+      text-transform: uppercase
+      margin-bottom: 10px
+      margin-top: 15px
+      font-weight: normal
+    p
+      +pfl
+      color: #ffffff
+      font-size: 16px
+      padding: 0 5px
+
+
+
+.order
+  padding-bottom: 40px
+  .order_in
+    @extend %in
+  h2
+    margin-bottom: 40px
+    text-align: center
+  &__item
+    background: url("../img/order-item_bg.jpg") no-repeat
+    vertical-align: top
+    width: 300px
+    height: 500px
+    text-align: center
+    padding-top: 25px
+    display: inline-block
+    margin-right: 45px
+
+    +box
+    &:last-child
+      margin-right: 0
+  &__caption
+    font-size: 24px
+    font-family: 'conv_pfdintextcondpro-thin'
+    margin-bottom: 5px
+    color: #000
+    text-transform: uppercase
+  &__img
+    display: inline-block
+    margin-bottom: 15px
+    width: 190px
+    height: 310px
+    img
+      display: block
+  &__price
+    +box
+    line-height: 2em
+
+
+    h3
+      font-family: 'conv_pfdintextcondpro-regular'
+      font-size: 24px
+      font-weight: normal
+      color: #aa2828
+      span
+        font-family: 'als_rublregular'
+
+  &__text
+    padding: 20px 15px 0
+    font-size: 16px
+    color: #787878
+    text-align: left
+  &__form
+    margin-top: 5px
+    input
+      width: 250px
+      margin-bottom: 10px
+      border: 2px solid #dbdbdb
+      +border-radius(4px)
+    .button
+      font-size: 24px
+      float: none
+      padding: 11px 54px
+      +box-shadow(inset 0 -2px 0 #c7b345)
+      &:hover
+        +box-shadow(0 0 0 0)
+
+
+.bottom
+  @extend header
+  padding-top: 0
+  height: 940px
+  .header_in--bottom
+    margin-top: 0px
+    .watch
+      margin-top: 0px
+
+
+footer
+  +clr
+  box-sizing: border-box
+  height: 90px
+  background: #777
+  .footer_in
+    @extend %in
+  text-align: center
+  padding-top: 10px
+  p
+    font-size: 16px
+    color: #3c3c3c
+    a
+      color: #ffffff
+      &:hover
+        text-decoration: none
+
